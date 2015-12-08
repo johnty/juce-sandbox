@@ -34,11 +34,11 @@ TestDialog::TestDialog ()
    
    addAndMakeVisible (tabbedComponent = new TabbedComponent (TabbedButtonBar::TabsAtTop));
    tabbedComponent->setTabBarDepth (30);
-   tabbedComponent->addTab (TRANS("Devices"), Colours::grey, new SlidersPage(), false);
-   tabbedComponent->addTab (TRANS("Sensors"), Colour (0xfffcc5c5), new SlidersPage(), false);
+   tabbedComponent->addTab (TRANS("Devices"), Colours::grey, new SlidersPage(), true);
+   tabbedComponent->addTab (TRANS("Sensors"), Colour (0xfffcc5c5), new SlidersPage(), true);
    tabbedComponent->addTab (TRANS("Analysis"), Colour (0xffaafbbb), new SlidersPage(), true);
-   tabbedComponent->setCurrentTabIndex (0);
    tabbedComponent->addTab(TRANS("Sliders"), Colours::chartreuse, new SlidersPage(), true);
+   tabbedComponent->setCurrentTabIndex (2);
    
    
    //[UserPreSize]
